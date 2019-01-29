@@ -1,0 +1,17 @@
+<div id="example-ui-component" data-bind="scope: 'example-ui-component'">
+    Subtotal of cart: <span data-bind="html: cart().subtotal"></span>
+</div>
+
+<script type="text/x-magento-init">
+{
+  "*": {
+    "Magento_Ui/js/core/app": {
+      "components": {
+        "example-ui-component": {
+          "component": "Yireo_ExampleUicomponent/js/example"
+        }
+      }
+    }
+  }
+}
+</script>
